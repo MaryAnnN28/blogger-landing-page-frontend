@@ -1,0 +1,69 @@
+* {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0
+}
+
+.header-container {
+  background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  border-radius: 0 0 0 40px;
+  height: 400px;
+}
+
+.navigation-container {
+  width: 100%; 
+  top: 0; 
+  padding-top: 50px;
+}
+
+.nav-left {
+  /* width: 25%;  */
+  float: left; 
+  margin-left: 150px; 
+}
+
+.nav-center {
+  /* width: 50%;  */
+  float: left;
+  margin-left: 60px; 
+}
+
+.main-link {
+  text-decoration: none;
+  display: inline-block;
+  color: hsl(0, 0%, 100%);
+  /* margin: 10px;  */
+  padding: 12px; 
+  font-size: 11pt;
+}
+
+.material-icons {
+  position: absolute; 
+  display: inline;
+  /* margin-bottom: 10px; 
+  padding-right: 10px;  */
+}
+
+.nav-right {
+  /* width: 25%; */
+  float: right; 
+  margin-right: 150px; 
+}
+
+.login-btn {
+  text-decoration: none;
+  padding-right: 20px;
+  color: hsl(0, 0%, 100%);
+}
+
+.signup-btn {
+  width: 110px; 
+  height: 35px; 
+  background-color: hsl(0, 0%, 100%);
+  border-style: none;
+  border-radius: 35px;
+  color:hsl(353, 100%, 62%);
+  font-weight: 500;
+  font-size: 11pt;
+}
+
+
