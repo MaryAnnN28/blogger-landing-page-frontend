@@ -22,7 +22,6 @@
 }
 
 .nav-center {
-  /* width: 50%;  */
   float: left;
   margin-left: 60px; 
 }
@@ -31,7 +30,6 @@
   text-decoration: none;
   display: inline-block;
   color: hsl(0, 0%, 100%);
-  /* margin: 10px;  */
   padding: 12px; 
   font-size: 11pt;
 }
@@ -39,12 +37,9 @@
 .material-icons {
   position: absolute; 
   display: inline;
-  /* margin-bottom: 10px; 
-  padding-right: 10px;  */
 }
 
 .nav-right {
-  /* width: 25%; */
   float: right; 
   margin-right: 150px; 
 }
@@ -83,5 +78,16 @@
   font-weight: 300;
   font-size: 14pt;
   letter-spacing: 1px;
+}
+
+.large-circle {
+  /* position: absolute; */
+  margin-left: 250px;
+  margin-top: -150px;
+  width: 500px; 
+  height: 500px; 
+  border-radius: 50%;
+  background: linear-gradient(90deg, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+  /* z-index: -1; */
 }
 
