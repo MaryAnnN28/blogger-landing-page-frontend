@@ -1,68 +1,127 @@
 * {
   font-family: 'Ubuntu', sans-serif;
-  margin: 0
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px; 
 }
 
 .header-container {
-  background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
-  border-radius: 0 0 0 40px;
-  height: 400px;
+  width: 100%;
+  height: 500px;
+  position: relative; 
+  background-image: url(./images/bg-pattern-intro.svg), linear-gradient(110deg, hsl(13, 100%, 72%) 4%, hsl(353, 100%, 62%) 70%);
+  background-position: 10%;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 6rem;
 }
 
-.navigation-container {
+/* .header-container {
+  background-image: url('./images/bg-pattern-intro.svg');
+  display: unset;
+} */
+
+.navbar {
   width: 100%; 
   top: 0; 
   padding-top: 50px;
+  overflow: hidden;
 }
 
-.nav-left {
-  /* width: 25%;  */
+.nav-logo {
   float: left; 
-  margin-left: 150px; 
+  margin-left: 200px; 
+  padding-right: 50px; 
 }
 
-.nav-center {
-  float: left;
-  margin-left: 60px; 
-}
-
-.main-link {
+.navbar a {
+  float: left; 
+  font-size: 14px; 
+  color:hsl(0, 0%, 100%); 
+  text-align: center;
+  padding: 14px 16px; 
   text-decoration: none;
-  display: inline-block;
-  color: hsl(0, 0%, 100%);
-  padding: 12px; 
-  font-size: 11pt;
 }
 
-.material-icons {
+.material-icons.md-18 {
+  font-size: 18px;
   position: absolute; 
-  display: inline;
+  padding-left: 4px; 
 }
+
+.subnav-btn {
+  float: left;
+  overflow: hidden;
+  align-items: center;
+}
+
+.subnav .subnav-btn {
+  font-size: 14px;
+  border: none; 
+  outline: none; 
+  color:hsl(0, 0%, 100%); 
+  padding: 12px 24px; 
+  background-color: inherit;
+  margin: 0; 
+}
+
+.navbar-container a:hover, .subnav:hover .subnav-btn {
+  color:hsl(353, 100%, 64%); 
+}
+
+.subnav-content {
+  display: none; 
+  position: absolute; 
+  background-color: transparent;
+  width: 100%; 
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left; 
+  color: white; 
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color:hsl(353, 100%, 62%)
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
 
 .nav-right {
   float: right; 
   margin-right: 150px; 
+  justify-content: center;
+  flex-direction: row;
 }
 
 .login-btn {
   text-decoration: none;
-  padding-right: 20px;
   color: hsl(0, 0%, 100%);
+  justify-content: center;
+  font-size: 14px;
 }
 
 .signup-btn {
   width: 110px; 
-  height: 35px; 
+  height: 40px; 
   background-color: hsl(0, 0%, 100%);
   border-style: none;
   border-radius: 35px;
   color:hsl(353, 100%, 62%);
   font-weight: 500;
-  font-size: 11pt;
+  font-size: 14px;
+  margin-left: 30px;
 }
 
 .header-content {
-  margin-top: 8em; 
+  margin-top: 6em; 
   text-align: center;
 }
 
@@ -76,18 +135,65 @@
 .sub-header {
   color:hsl(0, 0%, 100%); 
   font-weight: 300;
-  font-size: 14pt;
+  font-size: 17px;
   letter-spacing: 1px;
 }
 
-.large-circle {
-  /* position: absolute; */
-  margin-left: 250px;
-  margin-top: -150px;
-  width: 500px; 
-  height: 500px; 
-  border-radius: 50%;
-  background: linear-gradient(90deg, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
-  /* z-index: -1; */
+
+.header-btns {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
 }
 
+.start-free-btn {
+  align-self: center;
+  width: 120px; 
+  height: 40px; 
+  background-color: hsl(0, 0%, 100%);
+  border-style: none;
+  border-radius: 35px;
+  color:hsl(353, 100%, 62%);
+  font-weight: 500;
+  font-size: 14px;
+  margin: 1rem; 
+}
+
+.learn-more-btn {
+  align-self: flex-end;
+  width: 120px; 
+  height: 40px; 
+  background:transparent;
+  border-style: solid;
+  border-color: hsl(0, 0%, 100%);
+  border-width: 1px;
+  border-radius: 35px;
+  color:hsl(0, 0%, 100%);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
+.content-header {
+  text-align: center;
+  margin: 5rem; 
+  color: hsl(208, 49%, 24%); 
+  font-weight: 400;
+  font-size: 30px; 
+}
+
+.content-subheader {
+  color:hsl(208, 49%, 24%); 
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.main-content {
+  width: 100%;
+  flex-direction: column;
+}
+
+.main-content-left {
+  float: left;
+  width: 50%; 
+}
