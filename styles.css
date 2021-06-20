@@ -66,4 +66,22 @@
   font-size: 11pt;
 }
 
+.header-content {
+  margin-top: 8em; 
+  text-align: center;
+}
+
+.main-header h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  font-size: 43pt;
+  margin-bottom: 25px; 
+}
+
+.sub-header {
+  color:hsl(0, 0%, 100%); 
+  font-weight: 300;
+  font-size: 14pt;
+  letter-spacing: 1px;
+}
 
